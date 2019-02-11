@@ -45,7 +45,7 @@ class Ex22Test {
         if(isCorrect) {
             integers.forEach(i -> System.out.print("\t" + i));
             Integer actualResult = ex22.doConditional(m, integers);
-            assertEquals(actualResult, expectedResult);
+            assertEquals(expectedResult, actualResult);
             System.out.printf("expectedResult: %d, actualResult: %d %n", expectedResult, actualResult);
         }else {
             Exception exception = assertThrows(Exception.class, () -> ex22.doConditional(m, integers));
