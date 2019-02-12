@@ -18,21 +18,17 @@ public class Ex27 {
 
     public List<Integer> doConditional(List<Integer> integers) {
         int max = integers.get(0);
-        // 4 5 8 8
         for (int i = 0; i < integers.size(); i++) {
             if (integers.get(i) > max) {
                 max = integers.get(i);
             }
         }
-
         for (int i = 0; i < integers.size(); i++) {
             if (integers.get(i) == max) {
                 integers.set(i, 0);
                 break;
             }
         }
-
-
         return integers;
     }
 }
